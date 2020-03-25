@@ -2,7 +2,8 @@ package com.example.repozytorium;
 
 public class Lew implements Łapy {
     @Override
-    public String iloscLap() {
-        return "cztery";
+    public Integer iloscLap() {
+        System.out.print("Lew posiada: ");
+        return 4;
     }
 }

@@ -3,7 +3,8 @@ package com.example.repozytorium;
 public class Słoń implements Łapy {
 
     @Override
-    public String iloscLap() {
-        return "cztery";
+    public Integer iloscLap() {
+        System.out.print("Słoń postada: ");
+        return 4 ;
     }
 }
