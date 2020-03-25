@@ -1,14 +1,22 @@
 package com.example.repozytorium;
 
-public class Kot implements Glos {
-    int liczbaNog;
+public class Kot extends LetsTry {
+    int lapyyy = 4;
 
-    public Kot(int liczbaNog) {
-        this.liczbaNog = liczbaNog;
+    @Override
+    public String dajGlos() {
+        return "meowmewo";
     }
 
     @Override
-    public void dajGlos() {
-        System.out.println("meowmeow");
+    public Integer iloscLap() {
+        return lapyyy;
     }
+
+    @Override
+    public void setIloscNog2(Integer iloscNog2) {
+        super.setIloscNog2(iloscNog2);
+        lapyyy = iloscNog2;
+    }
+
 }

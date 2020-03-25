@@ -1,9 +1,22 @@
 package com.example.repozytorium;
 
-public class Lew implements Łapy {
+public class Lew extends LetsTry {
+    int lapy;
+
+    @Override
+    public String dajGlos() {
+        return "roooarrr";
+    }
+
     @Override
     public Integer iloscLap() {
-        System.out.print("Lew posiada: ");
-        return 4;
+
+        return lapy;
+    }
+
+    @Override
+    public void setIloscNog2(Integer iloscNog2) {
+        super.setIloscNog2(iloscNog2);
+        lapy = iloscNog2;
     }
 }

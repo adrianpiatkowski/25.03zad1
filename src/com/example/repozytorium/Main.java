@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Main {
+public class Main  {
 
     public static void main(String[] args) {
 
@@ -21,11 +21,21 @@ public class Main {
         Lew lew = new Lew();
         Losoś losoś = new Losoś();
         Słoń słoń = new Słoń();
-        ArrayList<Łapy> zwierzaki = new ArrayList();
+        ArrayList<Animal> zwierzaki = new ArrayList();
 
         zwierzaki.add(lew);
         zwierzaki.add(losoś);
         zwierzaki.add(słoń);
-        zwierzaki.stream().forEach(Łapy-> System.out.println(Łapy.iloscLap()));
+
+
+        Kot kot17 = new Kot();
+
+        kot17.setIloscNog2(17);
+
+        zwierzaki.add(kot17);
+
+        Kot zwyklak = new Kot();
+        zwierzaki.add(zwyklak);
+        zwierzaki.stream().forEach(Animal-> System.out.println("Zwierze posiada " + Animal.iloscLap()+ " łap, " + "wydaje dźwięk: " + Animal.dajGlos()));
     }
 }

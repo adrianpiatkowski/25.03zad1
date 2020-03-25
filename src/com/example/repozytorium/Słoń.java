@@ -1,10 +1,21 @@
 package com.example.repozytorium;
 
-public class Słoń implements Łapy {
+public class Słoń extends LetsTry {
+    int lapy;
+
+    @Override
+    public String dajGlos() {
+        return "Luuuuuuuu";
+    }
 
     @Override
     public Integer iloscLap() {
-        System.out.print("Słoń postada: ");
-        return 4 ;
+        return lapy;
+    }
+
+    @Override
+    public void setIloscNog2(Integer iloscNog2) {
+        super.setIloscNog2(iloscNog2);
+        lapy = iloscNog2;
     }
 }
